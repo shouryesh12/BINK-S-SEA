@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blue Hair Pirates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Blue Hair Pirates" class="logo" />
+    <h1>🏴‍☠️ Blue Hair Pirates 🏴‍☠️</h1>
+  </header>
+
+  <main>
+    <section id="crew-builder">
+      <h2>Create Your Pirate Crew</h2>
+      <div class="avatars" id="avatarContainer"></div>
+      <button onclick="generateCrew()">Assemble Crew</button>
+    </section>
+
+    <section id="wanted-poster">
+      <h2>Create Your Wanted Poster</h2>
+      <input type="text" id="pirateName" placeholder="Enter pirate name" />
+      <input type="number" id="bounty" placeholder="Enter bounty" />
+      <button onclick="createPoster()">Create Poster</button>
+      <div id="poster"></div>
+    </section>
+
+    <section id="devil-fruit-game">
+      <h2>🍇 Devil Fruit Guess</h2>
+      <button onclick="guessFruit()">Guess</button>
+      <p id="fruitResult"></p>
+    </section>
+
+    <section id="chat-box">
+      <h2>📡 Den Den Mushi Chat</h2>
+      <div id="chatLog"></div>
+      <input type="text" id="chatInput" placeholder="Say something..." />
+      <button onclick="sendMessage()">Send</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blue Hair Pirates</p>
+  </footer>
+</body>
+</html>
